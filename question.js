@@ -15,3 +15,8 @@ saySomethingAndReact(message)(surprisedReaction);
 const pure=()=>{
     return (a)=>{console.log(a)}
 }
+const f1=()=>{
+    return (a)=>{return a+1}
+}
+const f2=f1
+const f3=f2()
