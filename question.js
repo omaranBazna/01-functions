@@ -12,11 +12,6 @@ const saySomethingAndReact = (msg = 'you forgot to submit a message') => {
 
 // add the inputs here
 saySomethingAndReact(message)(surprisedReaction);
-const pure=()=>{
-    return (a)=>{console.log(a)}
+const createSpecialMessage=(name){
+    return "Hello, "+name
 }
-const f1=()=>{
-    return (a)=>{return a+1}
-}
-const f2=f1
-const f3=f2()
